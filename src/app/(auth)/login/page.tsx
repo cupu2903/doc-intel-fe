@@ -53,6 +53,19 @@ export default function LoginPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
+            {/* Test credentials hint */}
+            <div className="mb-4 rounded-md border border-primary/20 bg-primary/5 px-3 py-2.5 space-y-1">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-primary">Test Credentials</p>
+              <div className="flex items-center justify-between">
+                <span className="text-xs text-muted-foreground">Email</span>
+                <code className="text-xs font-mono text-foreground select-all">yusuf@doc-intel.com</code>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-xs text-muted-foreground">Password</span>
+                <code className="text-xs font-mono text-foreground select-all">p@ssw0rd!</code>
+              </div>
+            </div>
+
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-1.5">
                 <Label htmlFor="email" className="text-xs font-semibold tracking-wider uppercase text-muted-foreground">
